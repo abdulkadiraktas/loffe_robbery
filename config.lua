@@ -2,12 +2,12 @@ Config = {}
 Translation = {}
 
 Config.Shopkeeper = 416176080 -- hash of the shopkeeper ped
-Config.Locale = 'en' -- 'en', 'sv' or 'custom'
+Config.Locale = 'tr' -- 'en', 'sv' or 'custom'
 
 Config.Shops = {
     -- {coords = vector3(x, y, z), heading = peds heading, money = {min, max}, cops = amount of cops required to rob, blip = true: add blip on map false: don't add blip, name = name of the store (when cops get alarm, blip name etc)}
-    {coords = vector3(24.03, -1345.63, 29.5-0.98), heading = 266.0, money = {5000, 15000}, cops = 1, blip = true, name = '7/11', cooldown = {hour = 0, minute = 30, second = 0}, robbed = false},
-    {coords = vector3(-705.73, -914.91, 19.22-0.98), heading = 91.0, money = {7500, 20000}, cops = 1, blip = true, name = '7/11', cooldown = {hour = 0, minute = 30, second = 0}, robbed = false}
+    {coords = vector3(24.03, -1345.63, 29.5-0.98), heading = 266.0, money = {5000, 15000}, cops = 0, blip = false, name = '7/11', cooldown = {hour = 0, minute = 30, second = 0}, robbed = false},
+    {coords = vector3(-705.73, -914.91, 19.22-0.98), heading = 91.0, money = {7500, 20000}, cops = 0, blip = false, name = '7/11', cooldown = {hour = 0, minute = 30, second = 0}, robbed = false}
 
 }
 
@@ -38,17 +38,17 @@ Translation = {
         ['robbery'] = 'Pågående butiksrån',
         ['walked_too_far'] = 'Du gick för långt bort!'
     },
-    ['custom'] = { -- edit this to your language
-        ['shopkeeper'] = '',
-        ['robbed'] = '',
-        ['cashrecieved'] = '',
-        ['currency'] = '',
-        ['scared'] = '',
-        ['no_cops'] = '',
-        ['cop_msg'] = '',
-        ['set_waypoint'] = '',
-        ['hide_box'] = '',
-        ['robbery'] = '',
-        ['walked_too_far'] = ''
+    ['tr'] = {
+        ['shopkeeper'] = 'Kasiyer:',
+        ['robbed'] = "Daha önce soyuldum zaten! Param yok.",
+        ['cashrecieved'] = 'elde ettin.',
+        ['currency'] = '$',
+        ['scared'] = 'Korkmuş:',
+        ['no_cops'] = 'Sunucuda yeteri kadar polis yok!',
+        ['cop_msg'] = 'Güvenlik kamerası tarafından çekilen resmin polis ekiplerine iletildi.',
+        ['set_waypoint'] = 'Mağazayı işaretle',
+        ['hide_box'] = 'Bilgiyi kapat',
+        ['robbery'] = 'Soygun devam ediyor.',
+        ['walked_too_far'] = 'Marketten kaçtığın için soygun başarısız oldu!'
     }
 }
